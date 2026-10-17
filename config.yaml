@@ -1,0 +1,21 @@
+data:
+  raw_train_path: "data/raw/train.csv"
+  raw_test_path: "data/raw/test.csv"
+  processed_dir: "data/processed/"
+
+model:
+  output_path: "models/lgbm_model.pkl"
+  threshold_path: "models/threshold.json"
+  target_col: "is_fraud"
+  
+params:
+  objective: "binary"
+  metric: "average_precision"
+  boosting_type: "gbdt"
+  learning_rate: 0.05
+  num_leaves: 31
+  scale_pos_weight: 15
+  random_state: 42
+  early_stopping_rounds: 30
+  n_estimators: 1000
+

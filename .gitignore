@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Virtual Environment
+venv/
+.env
+
+# Data & Models (داده‌های حجیم نباید به گیت بروند)
+data/
+models/*.pkl
+*.csv
+
+
